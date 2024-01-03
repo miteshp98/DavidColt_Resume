@@ -172,3 +172,128 @@ nav {
   font-size: 0.9rem;
   align-self: center;
 }
+
+.resume_section {
+  width: 100%;
+  height: 100%;
+  background-color: var(--first-color);
+}
+
+.resume_container {
+  width: 100%;
+}
+
+.experience_details,
+.education_details,
+.skill_details {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 0.5fr 0.7fr 1fr;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.space_content {
+  grid-row: 1;
+  height: 35px;
+}
+
+.title_main {
+  font-weight: 700;
+  font-size: 3rem;
+  grid-row: 2;
+  justify-self: flex-start;
+  margin-left: 20px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+.work_experience,
+.education_title,
+.skills_title {
+  grid-row: 3;
+  justify-self: flex-start;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.work_experience h2,
+.education_details h2,
+.skills_title h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-weight: 650;
+}
+
+.designer_experince,
+.bachelor_details,
+.skill_cont {
+  grid-row: 3;
+  grid-column: 3;
+  padding: 15px;
+}
+
+.designer_serve_year,
+.bachelor_serve_year {
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: flex-end;
+  padding: 15px;
+}
+
+.designer_experince span:nth-child(1),
+.photographer_experience span:nth-child(1),
+.intern_experience span:nth-child(1),
+.bachelor_details span:nth-child(1),
+.highschool_details span:nth-child(1) {
+  font-weight: 650;
+}
+
+.designer_experince p,
+.photographer_experience p,
+.intern_experience p,
+.bachelor_details p,
+.highschool_details p {
+  font-size: 0.9rem;
+  padding-top: 10px;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+.photographer_serve_year,
+.highschool_serve_year {
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: flex-end;
+  padding: 15px;
+}
+
+.photographer_experience,
+.highschool_details {
+  grid-column: 3;
+  grid-row: 4;
+  padding: 15px;
+}
+
+.intern_serve_year {
+  grid-column: 2;
+  grid-row: 5;
+  justify-self: flex-end;
+  padding: 15px;
+}
+
+.intern_experience {
+  grid-column: 3;
+  grid-row: 5;
+  padding: 15px;
+}
+
+.skill_cont li {
+  padding: 5px 0;
+}
+
+.skill_cont {
+  margin-bottom: 50px;
+}
