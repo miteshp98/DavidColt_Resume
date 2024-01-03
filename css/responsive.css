@@ -16,6 +16,18 @@
     width: 650px;
     transition: all 0.3s ease-in;
   }
+
+  .project01,
+  .project02,
+  .project03 {
+    width: 90%;
+  }
+
+  .abstract_img img,
+  .project02_img img,
+  .project03_img img {
+    width: 450px;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -118,6 +130,34 @@
   .footer_section {
     height: 12vh;
   }
+
+  .project01,
+  .project02,
+  .project03 {
+    grid-template-rows: auto auto;
+    grid-template-columns: none;
+    gap: 20px 20px;
+  }
+
+  .project01 h1 {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .project01_title,
+  .project02_title,
+  .project03_title {
+    grid-row: 2;
+  }
+
+  .abstract_img,
+  .project02_img,
+  .project03_img {
+    grid-row: 3;
+    grid-column: 1;
+    justify-self: flex-start;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -185,6 +225,22 @@
     padding-top: 10px;
     text-align: left;
     justify-self: center;
+  }
+
+  .abstract_img,
+  .project02_img,
+  .project03_img {
+    justify-self: center;
+  }
+
+  .project01 h1 {
+    font-size: 2.2rem;
+  }
+
+  .abstract_img img,
+  .project02_img img,
+  .project03_img img {
+    width: 400px;
   }
 }
 
@@ -291,5 +347,11 @@
   .intern_serve_year {
     grid-column: 1;
     font-weight: 600;
+  }
+
+  .abstract_img img,
+  .project02_img img,
+  .project03_img img {
+    width: 350px;
   }
 }
