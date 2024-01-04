@@ -6,6 +6,8 @@
 }
 
 @media screen and (max-width: 1250px) {
+  /* Home Page Sectoin CSS */
+
   .about_container {
     width: 100%;
     transition: all 0.3s ease-in;
@@ -16,6 +18,8 @@
     width: 650px;
     transition: all 0.3s ease-in;
   }
+
+  /* Project Page Section CSS */
 
   .project01,
   .project02,
@@ -28,9 +32,17 @@
   .project03_img img {
     width: 450px;
   }
+
+  /* Contact Page Section CSS */
+
+  .contact_container {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1150px) {
+  /* Home Page Sectoin CSS */
+
   .self_image {
     width: 600px;
     transition: all 0.3s ease-in;
@@ -43,15 +55,25 @@
 }
 
 @media screen and (max-width: 1080px) {
+  /* Home Page Sectoin CSS */
+
   .about_container {
     gap: 0;
     justify-content: flex-start;
     transition: all 0.3s ease-in;
   }
 
+  .button_cont button {
+    width: 130px;
+    height: 130px;
+  }
+
   .about_details {
     flex-grow: 1;
   }
+
+  /* Resume Page Section CSS */
+
   .experience_details,
   .education_details,
   .skill_details {
@@ -108,28 +130,30 @@
   .intern_serve_year {
     grid-column: 1;
   }
+
+  /* Contact Page Section CSS */
+
+  .contact_details h1 {
+    font-size: 3.1rem;
+  }
+
+  .contact_details h2 {
+    font-size: 1.7rem;
+  }
 }
 
 @media screen and (max-width: 1030px) {
+  /* Home Page Sectoin CSS */
+
   .self_image {
     width: 550px;
-  }
-
-  .footer_section {
-    height: 100%;
-  }
-
-  .button_cont a {
-    padding: 25px;
   }
 
   .about_details h1 {
     font-size: 5rem;
   }
 
-  .footer_section {
-    height: 12vh;
-  }
+  /* Project Page Section CSS */
 
   .project01,
   .project02,
@@ -158,12 +182,32 @@
     grid-column: 1;
     justify-self: flex-start;
   }
+
+  /* Contact Page Section CSS */
+
+  .contact_container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .form_container {
+    grid-row: 3;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Contact Page Section CSS */
+
+  .contact_container {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 960px) {
+  /* Home Page Sectoin CSS */
+
   .about_section {
-    height: 85vh;
-    max-height: 85vh;
+    height: 90vh;
   }
 
   .about_container {
@@ -188,15 +232,78 @@
     border: none;
     padding: 15px 0;
   }
+}
 
-  .sepration-line {
+@media screen and (max-width: 810px) {
+  /* Contact Page Section CSS */
+
+  .contact_container {
+    grid-template-columns: 0.8fr 0.8fr;
+    justify-content: center;
+  }
+
+  .contact_details {
+    padding: 10px;
+  }
+
+  .contact_details h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact_details h2 {
+    font-size: 1.1rem;
+  }
+
+  .contact_details p {
+    font-size: 0.8rem;
+  }
+
+  .form_container {
+    padding: 15px;
+    grid-column: 2;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  #firstname,
+  #lastname,
+  #emailaddress,
+  #subject {
+    height: 30px;
+    width: 200px;
+  }
+
+  #submit {
+    width: 120px;
+    height: 120px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  /* Contact Page Section CSS */
+
+  .contact_container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact_details {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 15px;
+  }
+
+  .form_container {
+    grid-column: 1;
+    justify-self: center;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .footer_section {
-    height: 18vh;
-  }
+  /* Footer section css */
+
   .footer_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,6 +334,8 @@
     justify-self: center;
   }
 
+  /* Project Page Section CSS */
+
   .abstract_img,
   .project02_img,
   .project03_img {
@@ -245,17 +354,18 @@
 }
 
 @media screen and (max-width: 490px) {
+  /* Home Page Sectoin CSS */
+
   .self_image {
     width: 400px;
   }
 
-  .button_cont a {
-    padding: 20px;
+  .button_cont button {
+    width: 120px;
+    height: 120px;
   }
 
-  .footer_section {
-    height: 34vh;
-  }
+  /* Footer section css */
 
   .footer_container {
     display: grid;
@@ -286,6 +396,8 @@
     text-align: center;
     grid-row: 5;
   }
+
+  /* Resume Page Section CSS */
 
   .experience_details,
   .education_details,
@@ -349,9 +461,140 @@
     font-weight: 600;
   }
 
+  /* Project Page Section CSS */
+
   .abstract_img img,
   .project02_img img,
   .project03_img img {
     width: 350px;
+  }
+
+  /* Contact Page Section CSS */
+
+  .contact_details {
+    padding: 20px;
+  }
+
+  .contact_section {
+    height: auto;
+  }
+
+  .form_container {
+    margin: 10px;
+    padding: 0;
+    padding: 20px;
+  }
+
+  .contact_container {
+    grid-template-rows: 1fr;
+    padding: 20px;
+  }
+
+  .contact_form_group {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+  }
+
+  #firstname {
+    width: 400px;
+    height: 40px;
+  }
+
+  .last_name {
+    grid-row: 3;
+  }
+
+  #lastname {
+    grid-row: 4;
+    width: 400px;
+    height: 40px;
+  }
+
+  .email_id {
+    grid-row: 5;
+  }
+
+  #emailaddress {
+    grid-row: 6;
+    width: 400px;
+    height: 40px;
+  }
+
+  .sub_ject {
+    grid-row: 7;
+  }
+
+  #subject {
+    grid-row: 8;
+    width: 400px;
+    height: 40px;
+  }
+
+  .message_block {
+    grid-row: 9;
+  }
+
+  #message {
+    grid-row: 10;
+    grid-column: 1;
+  }
+
+  #submit {
+    grid-row: 11;
+    grid-column: 1;
+    width: 90px;
+    height: 90px;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  /* Contact Page Section CSS */
+
+  #firstname,
+  #lastname,
+  #emailaddress,
+  #subject {
+    width: 350px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Home Page Sectoin CSS */
+
+  .about_details h1 {
+    font-size: 4.5rem;
+  }
+
+  .about_details h2 {
+    font-size: 1.1rem;
+  }
+
+  .about_details p {
+    width: 350px;
+  }
+
+  .button_cont button {
+    width: 110px;
+    height: 110px;
+  }
+  /* Project Page Section CSS */
+
+  .project01,
+  .project02,
+  .project03 {
+    width: 100%;
+    column-gap: 0px;
+  }
+
+  /* Contact Page Section CSS */
+
+  #firstname,
+  #lastname,
+  #emailaddress,
+  #subject {
+    width: 280px;
+    height: 40px;
   }
 }
