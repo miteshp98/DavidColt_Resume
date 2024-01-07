@@ -598,3 +598,19 @@
     height: 40px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .about_container {
+    width: 100%;
+  }
+
+  .about_container img {
+    width: 350px;
+  }
+
+  .project02_img img,
+  .project03_img img,
+  .abstract_img img {
+    width: 300px;
+  }
+}
